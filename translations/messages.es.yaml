@@ -1,0 +1,49 @@
+# Navigation Start
+_nav:
+  lang: "Idioma"  # Enlace sobre nosotros
+  logout: "Cerrar sesión"  # Enlace de cierre de sesión
+  login: "Iniciar sesión"  # Enlace de inicio de sesión
+# Navigation End
+
+# Bottom Bar Start
+_bottombar:
+  email: "Envíanos un correo"  # Título de la sección de correo
+  call: "Llámanos"  # Título de la sección de llamadas
+# Bottom Bar End
+
+# Footer Start
+_footer:
+  get_in_touch: "Ponte en contacto"  # Título de la sección de contacto en el pie de página
+  description: "No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor"  # Texto de descripción
+  quick_links: "Enlaces rápidos"  # Título para enlaces rápidos
+  popular_links: "Enlaces populares"  # Título para enlaces populares
+  our_services: "Nuestros servicios"  # Servicios de la empresa
+  meet_the_team: "Conoce al equipo"  # Equipo de la empresa
+  newsletter: "Boletín"  # Título de la sección de boletín
+  follow_us: "Síguenos"  # Título de la sección de seguimiento en redes sociales
+  terms_conditions: "Términos y condiciones"  # Enlace a términos y condiciones
+  privacy_policy: "Política de privacidad"  # Enlace a política de privacidad
+  customer_support: "Atención al cliente"  # Enlace de atención al cliente
+  payments: "Pagos"  # Enlace de pagos
+  help: "Ayuda"  # Enlace de ayuda
+  faqs: "Preguntas frecuentes"  # Enlace de preguntas frecuentes
+  rights: "Todos los derechos reservados."  # Declaración de derechos de autor
+  designed_by: "Diseñado por "  # Crédito de diseño
+# Footer End
+
+# Button Start
+_button:
+  subscribe_email_placeholder: "Tu correo"  # Placeholder para suscripción de correo
+  sign_up: "Regístrate"  # Texto del botón de registro
+  send: "Enviar"  # Texto del botón de enviar
+# Button End
+
+# General Content
+_general:
+  name: "DETAILCAR "  # Nombre de la empresa
+  contact: "Contacto"  # Enlace de contacto
+  home: "Inicio"  # Enlace de inicio
+  office: "Nuestra oficina"  # Título de la sección de oficina
+  email_address: "info@example.com"  # Dirección de correo electrónico
+  phone: "+012 345 6789"  # Número de teléfono
+  office_address: "123 Calle, Nueva York, EE. UU."  # Dirección de la oficina

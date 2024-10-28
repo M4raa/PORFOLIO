@@ -1,17 +1,163 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="en">
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="{{ asset('img/favicon.ico') }}" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="{{ asset('lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    {{ include ('partials/_nav.html.twig')}}
+    <!-- Navbar End -->
+
+    <!-- Body Start -->
+    {% block body %}
+    {% endblock %}
+    <!-- Body End -->
+
+    <!-- Bottombar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">{{ '_general.office' | trans }}</h6>
+                        <span>{{ '_general.office_address' | trans }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">{{ '_bottombar.email' | trans }}</h6>
+                        <span>{{ '_general.email_address' | trans }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">{{ '_bottombar.call' | trans }}</h6>
+                        <span>{{ '_general.phone' | trans }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottombar End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">{{ '_footer.get_in_touch' | trans }}</h5>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>{{ '_general.office_address' | trans }}</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>{{ '_general.email_address' | trans }}</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>{{ '_general.phone' | trans }}</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">{{ '_footer.quick_links' | trans }}</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_general.home' | trans }}</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_footer.our_services' | trans }}</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_footer.meet_the_team' | trans }}</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_general.contact' | trans }}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">{{ '_footer.popular_links' | trans }}</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_general.home' | trans }}</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_footer.our_services' | trans }}</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_footer.meet_the_team' | trans }}</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>{{ '_general.contact' | trans }}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">{{ '_footer.newsletter' | trans }}</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <label>
+                                <input type="text" class="form-control p-3" placeholder="{{ '_button.subscribe_email_placeholder' | trans }}">
+                            </label>
+                            <button class="btn btn-primary">{{ '_button.sign_up' | trans }}</button>
+                        </div>
+                    </form>
+                    <h6 class="text-uppercase mt-4 mb-3">{{ '_footer.follow_us' | trans }}</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-primary btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">{{ '_footer.terms_conditions' | trans }}</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">{{ '_footer.privacy_policy' | trans }}</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">{{ '_footer.customer_support' | trans }}</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">{{ '_footer.payments' | trans }}</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">{{ '_footer.help' | trans }}</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">{{ '_footer.faqs' | trans }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">{{ '_general.name' | trans }}</a>{{ '_footer.rights' | trans }}</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">{{ '_footer.designed_by' | trans }}<a href="https://github.com/M4raa">M4raa</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+    <script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ asset('js/main.js') }}"></script>
+</body>
+
 </html>

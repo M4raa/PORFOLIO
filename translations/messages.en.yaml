@@ -1,0 +1,51 @@
+# Navigation Start
+_nav:
+  lang: "Language"  # About us link
+  logout: "Logout"  # Logout link
+  login: "Login"  # Login link
+# Navigation End
+
+# Bottom Bar Start
+_bottombar:
+  email: "Email Us"  # Email section title
+  call: "Call Us"  # Call section title
+
+# Bottom Bar End
+
+# Footer Start
+_footer:
+  get_in_touch: "Get In Touch"  # Footer section title for contact
+  description: "No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor"  # Description text
+  quick_links: "Quick Links"  # Title for quick links
+  popular_links: "Popular Links"  # Title for popular links
+  our_services: "Our Services" # Services of the company
+  meet_the_team: "Meet The Team" # Team of the company
+  newsletter: "Newsletter"  # Newsletter section title
+  follow_us: "Follow Us"  # Social media follow section title
+  terms_conditions: "Terms & Conditions"  # Terms and conditions link
+  privacy_policy: "Privacy Policy"  # Privacy policy link
+  customer_support: "Customer Support"  # Customer support link
+  payments: "Payments"  # Payments link
+  help: "Help"  # Help link
+  faqs: "FAQs"  # FAQs link
+  rights: "All Rights Reserved."  # Copyright statement
+  designed_by: "Designed by "  # Design credit
+# Footer End
+
+# Button Start
+_button:
+  subscribe_email_placeholder: "Your Email"  # Placeholder for email subscription
+  sign_up: "Sign Up"  # Sign up button text
+  send: "Send"  # Send button text
+# Button End
+
+#General Content
+_general:
+  name: "DETAILCAR " # Name of the company
+  contact: "Contact"  # Contact link
+  home: "Home"  # Home link
+  office: "Our Office"  # Office section title
+  email_address: "info@example.com"  # Email address
+  phone: "+012 345 6789"  # Phone number
+  office_address: "123 Street, New York, USA"  # Office address
+
