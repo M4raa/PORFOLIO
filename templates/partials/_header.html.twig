@@ -1,0 +1,50 @@
+<header class="bg-dark text-light">
+    <div class="container-fluid p-lg-1 col-12 d-flex justify-content-between align-items-center">
+        <a href="{{ path('main_index') }}" class="navbar-brand ms-lg-5 col-6">
+            <h1 id="title" class="m-0 text-uppercase"><i class="bi bi-shop fs-1 text-primary me-3"></i>{{ '_general.name' | trans }}</h1>
+        </a>
+
+        <!-- MENU
+        <nav class="navbar custom-navbar col-3">
+            <div class="container d-flex">
+                <a class="nav-link active" href="{{ path('main_index') }}">{{ '_nav.index' | trans }}</a>
+                <a class="nav-link" href="{{ path('main_projects') }}">{{ '_nav.projects' | trans }}</a>
+                <a class="nav-link" href="{{ path('main_about') }}">{{ '_nav.about' | trans }}</a>
+                <a class="nav-link" href="{{ path('main_contact') }}">{{ '_nav.contact' | trans }}</a>
+            </div>
+        </nav>
+        -->
+        <!-- MENU START -->
+        <nav class="header_nav col-3">
+            <button class="custom_btn clear_btn header_btn" value="{{ path('main_index') }}">
+                <span class="btn_top">{{ '_nav.index' | trans }}</span>
+            </button>
+            <button class="custom_btn clear_btn header_btn" value="{{ path('main_projects') }}">
+                <span class="btn_top">{{ '_nav.projects' | trans }}</span>
+            </button>
+            <button class="custom_btn clear_btn header_btn" value="{{ path('main_about') }}">
+                <span class="btn_top">{{ '_nav.about' | trans }}</span>
+            </button>
+            <button class="custom_btn clear_btn header_btn" value="{{ path('main_contact') }}">
+                <span class="btn_top">{{ '_nav.contact' | trans }}</span>
+            </button>
+        </nav>
+        <!-- MENU END -->
+
+        <div class="col-1 d-flex flex-row">
+            <!-- DARK / WHITE -->
+            <button id="clear_dark" class="custom_btn clear_btn header_btn">
+                <span class="btn_top"><i class="fa-solid fa-sun"></i></span>
+            </button>
+
+            <!-- LANGUAGE DROPDOWN MENU -->
+            <div class="dropdown-lang dropdown custom_btn clear_btn header_btn" data-bs-toggle="dropdown">
+                <div class="text-uppercase btn_top">{{ app.request.locale }}</div>
+                <div class="dropdown-menu m-0">
+                    <div class="dropdown-item" aria-label="en" aria-path="{{ path('set_lang', {'lang': 'en'})}}">{{ '_lang.english' | trans }}</div>
+                    <div class="dropdown-item" aria-label="es" aria-path="{{ path('set_lang', {'lang': 'es'})}}">{{ '_lang.spanish' | trans }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

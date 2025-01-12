@@ -1,27 +1,106 @@
 /******* Customized Bootstrap ********/
 
-$primary: #000000;
-$secondary: #FFD33C;
-$light: #F3F3F3;
-$dark: #212121;
+$primary: #6A1B9A; /* Violeta intenso */
+$secondary: #43A047; /* Verde esmeralda */
+$success: #43A047; /* Verde esmeralda */
+$danger: #E53935; /* Rojo vibrante */
+$warning: #FFB300; /* Amarillo brillante */
+$info: #1E88E5; /* Azul cielo */
+$light: #F5F5F5; /* Gris claro */
+$dark: #212121; /* Gris oscuro */
 
-$font-family-sans-serif: 'Poppins', sans-serif;
+/* Sobrescribe las variables de Bootstrap */
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "danger": $danger,
+        "warning": $warning,
+        "info": $info,
+        "light": $light,
+        "dark": $dark
+);
 
-$headings-font-family: 'Roboto', sans-serif;
 
-$body-color: #656565;
-
-$headings-color: $dark;
-
-$headings-font-weight: 700;
-
-$display-font-weight: 700;
-
-$enable-responsive-font-sizes: true;
-
-$border-radius: false;
-
-$link-decoration: none;
-
+/* Importa Bootstrap */
 @import 'bootstrap/scss/bootstrap';
+
+/* Personalización adicional de estilos */
+
+/* Texto */
+.text-primary {
+  color: $primary !important;
+}
+.text-secondary {
+  color: $secondary !important;
+}
+.text-danger {
+  color: $danger !important;
+}
+.text-warning {
+  color: $warning !important;
+}
+.text-info {
+  color: $info !important;
+}
+.text-light {
+  color: $light !important;
+}
+.text-dark {
+  color: $dark !important;
+}
+
+/* Fondo */
+.bg-primary {
+  background-color: $primary !important;
+}
+.bg-secondary {
+  background-color: $secondary !important;
+}
+.bg-danger {
+  background-color: $danger !important;
+}
+.bg-warning {
+  background-color: $warning !important;
+}
+.bg-info {
+  background-color: $info !important;
+}
+.bg-light {
+  background-color: $light !important;
+}
+.bg-dark {
+  background-color: $dark !important;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
+.btn-danger {
+  background-color: $danger;
+  border-color: $danger;
+
+  &:hover {
+    background-color: darken($danger, 10%);
+    border-color: darken($danger, 10%);
+  }
+}
 @import "style.css";

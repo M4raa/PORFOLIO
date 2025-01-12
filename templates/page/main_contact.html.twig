@@ -1,4 +1,33 @@
 {% extends 'base.html.twig' %}
-{% block title %}DetailCar-Contact{% endblock %}
-{% block body %}
+{% block title %}Contact{% endblock %}
+{% block main %}
+    <div id="contact-main" class="py-5">
+        <div class="container">
+            <section>
+                <h2 id="contact_title" class="section-title mb-4">{{ '_contact.title' | trans }}:</h2>
+                <form id="contact-form" class="row g-3">
+                    <div class="col-md-6">
+                        <label id="contact-name" for="fname" class="form-label">{{ '_contact.fullName' | trans }}:</label>
+                        <input type="text" id="fname" class="form-control" name="fname" placeholder="John">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lnames" class="form-label">{{ '_contact.lastName' | trans }}:</label>
+                        <input type="text" id="lnames" class="form-control" name="fnames" placeholder="Doe">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">{{ '_contact.email' | trans }}:</label>
+                        <input type="email" id="email" class="form-control" name="email" placeholder="{{ '_contact.email_addres' | trans }}">
+                    </div>
+                    <div class="col-12">
+                        <label for="textarea" class="form-label">{{ '_contact.message' | trans }}:</label>
+                        <textarea id="textarea" class="form-control" maxlength="300"></textarea>
+                    </div>
+                    <div id="contact-btns" class="col-12 d-flex gap-3">
+                        <button id="contact-submit-btn" class="btn btn-primary flex-fill" type="submit">{{ '_contact.submit' | trans }}</button>
+                        <button id="contact-reset-btn" class="btn btn-secondary flex-fill" type="reset">{{ '_contact.reset' | trans }}</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
 {% endblock %}

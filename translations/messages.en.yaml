@@ -1,8 +1,11 @@
 # Navigation Start
 _nav:
-  lang: "Language"  # About us link
-  logout: "Logout"  # Logout link
-  login: "Login"  # Login link
+  lang: "Language"  # Selection language title
+  menu: "Menu" # Selection menu title
+  index: "Main" # Selection menu Index
+  projects: "Projects" # Selection projects title
+  about: "About M4ra" # Selection about title
+  contact: "Contact" # Selection contact title
 # Navigation End
 
 # Bottom Bar Start
@@ -39,13 +42,37 @@ _button:
   send: "Send"  # Send button text
 # Button End
 
-#General Content
+# General Content Start
 _general:
-  name: "DETAILCAR " # Name of the company
-  contact: "Contact"  # Contact link
-  home: "Home"  # Home link
-  office: "Our Office"  # Office section title
-  email_address: "info@example.com"  # Email address
-  phone: "+012 345 6789"  # Phone number
+  name: "M4ra Portfolio" # Name of the company
+  email_address: "M4aRaa@proton.me"  # Dirección de correo electrónico
+  phone: "+xx 000 00 00 00"  # Número de teléfono
   office_address: "123 Street, New York, USA"  # Office address
+# General Content End
 
+# Lang Start
+_lang:
+  spanish: "Spanish"
+  english: "English"
+# Land End
+
+# Contact Form Start
+_contact:
+  title: "CONTACT"
+  fullName: "Full Name"
+  lastName: "Last Name"
+  email: "E-mail"
+  email_addres: "jhondoe@exameple.com"
+  message: "Message"
+  submit: "Submit"
+  reset: "Reset"
+# Contact Form End
+
+# Index Start
+_index:
+  title1: "FULL STACK DEVELOPER"
+  p1: "Hello, I'm M4ra, a fullstack developer."
+  downloadCV: "Download my CV"
+  title2: "Those are some of my projects:"
+
+# Index End

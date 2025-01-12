@@ -1,8 +1,10 @@
 # Navigation Start
 _nav:
-  lang: "Idioma"  # Enlace sobre nosotros
-  logout: "Cerrar sesión"  # Enlace de cierre de sesión
-  login: "Iniciar sesión"  # Enlace de inicio de sesión
+  menu: "Menú" # Título de selección de menú
+  index: "Inicio" # Título de selección de Inicio
+  projects: "Proyectos" # Título de selección de proyectos
+  about: "Sobre M4ra" # Título de selección de sobre M4ra
+  contact: "Contacto" # Título de selección de contacto
 # Navigation End
 
 # Bottom Bar Start
@@ -40,10 +42,65 @@ _button:
 
 # General Content
 _general:
-  name: "DETAILCAR "  # Nombre de la empresa
-  contact: "Contacto"  # Enlace de contacto
-  home: "Inicio"  # Enlace de inicio
-  office: "Nuestra oficina"  # Título de la sección de oficina
-  email_address: "info@example.com"  # Dirección de correo electrónico
-  phone: "+012 345 6789"  # Número de teléfono
+  name: "M4ra Portfolio"  # Nombre de la empresa
+  email_address: "M4aRaa@proton.me"  # Dirección de correo electrónico
+  phone: "+xx 000 00 00 00"  # Número de teléfono
   office_address: "123 Calle, Nueva York, EE. UU."  # Dirección de la oficina
+
+# Lang Start
+_lang:
+  spanish: "Español"
+  english: "Inglés"
+# Land End
+
+# Contact Form Start
+_contact:
+  title: "CONTACTO"
+  fullName: "Nombre"
+  lastName: "Apellidos"
+  email: "E-mail"
+  email_addres: "jhondoe@ejemplo.com"
+  message: "Mensaje"
+  submit: "Enviar"
+  reset: "Borrar"
+# Contact Form End
+
+# Index Start
+_index:
+  title1: "DESARROLLADOR FULL STACK"
+  p1: "Hola, soy M4ra, un desarrollador fullstack."
+  downloadCV: "Descargar mi CV"
+  title2: "Estos son algunos de mis proyectos:"
+  title3: "Herramientas con las que trabajo"
+  cardButton: "Ver más..."
+
+# Index End
+
+# Projects Start
+_projects:
+  spotifyclone:
+    title: "CLON DE SPOTIFY"
+    cardText: "Clone básico de Spotify"
+  m4wser:
+    title: "M4WSER"
+    cardText: "Navegador web enfocado al OSINT con IA"
+  tracker:
+    title: "GAME TRACKER"
+    cardText: "Tracker de estadísticas de videojuegos"
+  liveChat:
+    title: "LIVE CHAT"
+    cardText: "Chat en vivo "
+  portfolio:
+    title: "PORTFOLIO"
+    cardText: "Portfolio"
+# Projects End
+
+# Tools Start
+_skills:
+  languages: "Lenguages"
+  frontend: "Frontend"
+  backend: "Bakcend"
+  database: "BDD"
+  frameworks: "Frameworks"
+  various: "Otros"
+# Tools End

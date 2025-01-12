@@ -16,7 +16,6 @@ class PageController extends AbstractController
     public function main_index(string $_locale): Response
     {
         return $this->render('page/main_index.html.twig', [
-            'controller_name' => 'PageController',
             '_locale' => $_locale,
         ]);
     }
@@ -25,23 +24,20 @@ class PageController extends AbstractController
     public function main_contact(): Response
     {
         return $this->render('page/main_contact.html.twig', [
-            'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/login', name: 'main_login')]
-    public function main_login(): Response
+    #[Route('/projects', name: 'main_projects')]
+    public function main_projects(): Response
     {
-        return $this->render('page/main_login.html.twig', [
-            'controller_name' => 'PageController',
+        return $this->render('page/main_projects.html.twig', [
         ]);
     }
 
-    #[Route('/logout', name: 'main_logout')]
-    public function main_logout(): Response
+    #[Route('/about', name: 'main_about')]
+    public function main_about(): Response
     {
-        return $this->render('page/main_login.html.twig', [
-            'controller_name' => 'PageController',
+        return $this->render('page/main_about.html.twig', [
         ]);
     }
 }
