@@ -4,10 +4,13 @@
     <div id="contact-main" class="py-5">
         <div class="container">
             <section>
+                <p class="contact_text">{{ '_contact.p1' | trans }}<a href="mailto:m4araa@proton.me?subject={{ '_contact.subject' | trans }}">M4aRaa@proton.me</a>{{ '_contact.p1.1' | trans }}</p>
+            </section>
+            <section>
                 <h2 id="contact_title" class="section-title mb-4">{{ '_contact.title' | trans }}:</h2>
                 <form id="contact-form" class="row g-3">
                     <div class="col-md-6">
-                        <label id="contact-name" for="fname" class="form-label">{{ '_contact.fullName' | trans }}:</label>
+                        <label for="fname" class="form-label">{{ '_contact.fullName' | trans }}:</label>
                         <input type="text" id="fname" class="form-control" name="fname" placeholder="John">
                     </div>
                     <div class="col-md-6">
@@ -23,8 +26,12 @@
                         <textarea id="textarea" class="form-control" maxlength="300"></textarea>
                     </div>
                     <div id="contact-btns" class="col-12 d-flex gap-3">
-                        <button id="contact-submit-btn" class="btn btn-primary flex-fill" type="submit">{{ '_contact.submit' | trans }}</button>
-                        <button id="contact-reset-btn" class="btn btn-secondary flex-fill" type="reset">{{ '_contact.reset' | trans }}</button>
+                        <div class="custom_btn clear_btn col-6">
+                            <button id="contact-submit-btn" class="btn_top" type="submit" data-url="{{ path('main_sendMail') }}">{{ '_contact.submit' | trans }}</button>
+                        </div>
+                        <div class="custom_btn clear_btn col-6">
+                            <button id="contact-reset-btn" class="btn_top" type="reset">{{ '_contact.reset' | trans }}</button>
+                        </div>
                     </div>
                 </form>
             </section>

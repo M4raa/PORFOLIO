@@ -79,4 +79,58 @@ $(document).ready(function() {
         }
 
     });
+
+    // CONTACT FORM SEND
+    let cntForm = $('#contact-form');
+    cntForm.on('submit', function (e) {
+        e.preventDefault();
+
+        // Validates the fields
+        let fname = $('#fname').val().trim();
+        let lnames = $('#lnames').val().trim();
+        let email = $('#email').val().trim();
+        let message = $('#textarea').val().trim();
+
+        if (!fname || !lnames || !email || !message) {
+            alert('Please fill all fields');
+            return;
+        }
+
+        // Validates the email field
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address!');
+            return;
+        }
+
+        // Sends through ajax the message
+        let submitButton = $('#contact-submit-btn')
+        let path = submitButton.data('url');
+        $.ajax({
+            url: path,
+            method: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ fname, lnames, email, message }),
+            success: function (response) {
+                // Success response
+                if (response.success) {
+                    alert('Your message was sent successfully!');
+                    cntForm[0].reset();  // Reset the form fields
+                } else {
+                    alert('Error: ' + response.message);
+                }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                // Error response
+                alert('Error sending message. Please try again later.');
+                console.log('Error:', error);
+            },
+            complete: function () {
+                // Re-enable the submit button after AJAX call completes
+                submitButton.prop('disabled', false);
+                submitButton.text(submitButton.text());
+            }
+        });
+    });
+
 })

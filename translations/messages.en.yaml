@@ -66,6 +66,9 @@ _contact:
   message: "Message"
   submit: "Submit"
   reset: "Reset"
+  subject: "Question"
+  p1: "Send me a mail: "
+  p1.1: " or fill the form below."
 # Contact Form End
 
 # Index Start
@@ -74,5 +77,42 @@ _index:
   p1: "Hello, I'm M4ra, a fullstack developer."
   downloadCV: "Download my CV"
   title2: "Those are some of my projects:"
+  title3: "Herramientas con las que trabajo"
+  cardButton: "View more..."
 
 # Index End
+
+# Projects Start
+_projects:
+  spotifyclone:
+    title: "SPOTIFY CLONE"
+    cardText: "Basic Spotify clone"
+  m4wser:
+    title: "M4WSER"
+    cardText: "Web browser focused in OSINT & enhanced with AI"
+  tracker:
+    title: "GAME TRACKER"
+    cardText: "Game stats tracker"
+  liveChat:
+    title: "LIVE CHAT"
+    cardText: "Live chat"
+  portfolio:
+    title: "PORTFOLIO"
+    cardText: "Portfolio"
+# Projects End
+
+# Tools Start
+_skills:
+  languages: "Languages"
+  frontend: "Frontend"
+  backend: "Backend"
+  database: "BDD"
+  frameworks: "Frameworks"
+  various: "Others"
+# Tools End
+
+# Email Start
+_email:
+  title: "Email sent correctly!"
+  p1: "Thank you for your message! I will try to respond asap"
+# Email End

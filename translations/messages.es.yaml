@@ -42,7 +42,7 @@ _button:
 
 # General Content
 _general:
-  name: "M4ra Portfolio"  # Nombre de la empresa
+  name: "M4ra Porfolio"  # Nombre de la empresa
   email_address: "M4aRaa@proton.me"  # Dirección de correo electrónico
   phone: "+xx 000 00 00 00"  # Número de teléfono
   office_address: "123 Calle, Nueva York, EE. UU."  # Dirección de la oficina
@@ -63,6 +63,9 @@ _contact:
   message: "Mensaje"
   submit: "Enviar"
   reset: "Borrar"
+  subject: "Pregunta"
+  p1: "Mándame un correo a: "
+  p1.1: " o rellena el formulario de abajo."
 # Contact Form End
 
 # Index Start
@@ -91,16 +94,22 @@ _projects:
     title: "LIVE CHAT"
     cardText: "Chat en vivo "
   portfolio:
-    title: "PORTFOLIO"
-    cardText: "Portfolio"
+    title: "PORFOLIO"
+    cardText: "Porfolio"
 # Projects End
 
 # Tools Start
 _skills:
   languages: "Lenguages"
   frontend: "Frontend"
-  backend: "Bakcend"
+  backend: "Backend"
   database: "BDD"
   frameworks: "Frameworks"
   various: "Otros"
 # Tools End
+
+# Email Start
+_email:
+  title: "Email enviado correctamente!"
+  p1: "Gracias por tu mensaje! Intentaré responder lo antes posible."
+# Email End
