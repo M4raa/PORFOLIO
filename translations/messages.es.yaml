@@ -7,30 +7,9 @@ _nav:
   contact: "Contacto" # Título de selección de contacto
 # Navigation End
 
-# Bottom Bar Start
-_bottombar:
-  email: "Envíanos un correo"  # Título de la sección de correo
-  call: "Llámanos"  # Título de la sección de llamadas
-# Bottom Bar End
-
 # Footer Start
 _footer:
-  get_in_touch: "Ponte en contacto"  # Título de la sección de contacto en el pie de página
-  description: "No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor"  # Texto de descripción
-  quick_links: "Enlaces rápidos"  # Título para enlaces rápidos
-  popular_links: "Enlaces populares"  # Título para enlaces populares
-  our_services: "Nuestros servicios"  # Servicios de la empresa
-  meet_the_team: "Conoce al equipo"  # Equipo de la empresa
-  newsletter: "Boletín"  # Título de la sección de boletín
-  follow_us: "Síguenos"  # Título de la sección de seguimiento en redes sociales
-  terms_conditions: "Términos y condiciones"  # Enlace a términos y condiciones
-  privacy_policy: "Política de privacidad"  # Enlace a política de privacidad
-  customer_support: "Atención al cliente"  # Enlace de atención al cliente
-  payments: "Pagos"  # Enlace de pagos
-  help: "Ayuda"  # Enlace de ayuda
-  faqs: "Preguntas frecuentes"  # Enlace de preguntas frecuentes
-  rights: "Todos los derechos reservados."  # Declaración de derechos de autor
-  designed_by: "Diseñado por "  # Crédito de diseño
+  networks: "Redes sociales"
 # Footer End
 
 # Button Start
@@ -44,8 +23,6 @@ _button:
 _general:
   name: "M4ra Porfolio"  # Nombre de la empresa
   email_address: "M4aRaa@proton.me"  # Dirección de correo electrónico
-  phone: "+xx 000 00 00 00"  # Número de teléfono
-  office_address: "123 Calle, Nueva York, EE. UU."  # Dirección de la oficina
 
 # Lang Start
 _lang:
@@ -56,7 +33,7 @@ _lang:
 # Contact Form Start
 _contact:
   title: "CONTACTO"
-  fullName: "Nombre"
+  firstName: "Nombre"
   lastName: "Apellidos"
   email: "E-mail"
   email_addres: "jhondoe@ejemplo.com"

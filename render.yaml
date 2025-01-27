@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: porfolio
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    buildCommand: ""
+    startCommand: apache2-foreground
+    healthCheckPath: /

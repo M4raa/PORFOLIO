@@ -1,0 +1,32 @@
+{% extends '../../base.html.twig' %}
+{% block title %}SPOTIFY CLONE{% endblock %}
+{% block main %}
+    <div class="container">
+        <h1 class="col-4 ms-5">SPOTIFY CLONE</h1>
+        <div class="d-flex flex-column p-3 gap-2 align-items-center justify-content-center">
+            <video width="720" height="480" controls autoplay loop muted>
+                <source src="../video/spotify.mp4" type="video/mp4" aria-controls>
+                Your browser doesn't support the tag video.
+            </video>
+            <div class="col-10">
+                <p> This project is basically a GUI to interact with the Spotify API. You can search for tracks, authors,
+                    playlists and albums.You will obtain a result as shown on the video ahead, but as you can see,
+                    you can no longer play any song because Spotify deprecated the preview of the songs.</p>
+                <p>We could improve the project and implement a new music player, but right now it's not on our plans.
+                    If you want to try it, I've put the link down below.</p>
+                <p>Thanks for watching!</p>
+                <hr>
+                <p>Thanks to my colleagues with whom I worked on this project:</p>
+                <div class="d-flex flex-column">
+                    <a href="https://github.com/victorTeleanu">Victor Teleanu</a>
+                    <a href="https://github.com/RobertoPecurto">Roberto Pecurto</a>
+                </div>
+            </div>
+            <div>
+                <button class="custom_btn clear_btn">
+                    <a href="https://github.com/M4raa/ProjectSpotify" class="btn_top" target="_blank"><i class="fab fa-github"></i></a>
+                </button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
